@@ -65,7 +65,10 @@ const Predict = () => {
         {result && (
           <div className="mt-4 text-lg font-semibold text-gray-600">
             <span>Prediction: </span>
-            {result}
+            <span className="text-blue-800">{result}</span>
+            {result == "Unknown" && (
+              <p className="text-red-400">No animal was detected</p>
+            )}
           </div>
         )}
         {imageENC && (
