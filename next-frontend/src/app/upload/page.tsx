@@ -27,7 +27,7 @@ const Predict = () => {
       const formData = new FormData();
       formData.append("file", file);
       try {
-        const res = await fetch("http://13.57.10.226/predict", {
+        const res = await fetch("https://3127489327489.store/predict", {
           method: "POST",
           body: formData,
         });
