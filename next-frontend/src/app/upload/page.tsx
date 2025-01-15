@@ -52,7 +52,7 @@ const Predict = () => {
           Upload Your Image Below
         </h1>
         <input
-          className="w-full py-3 px-4 border border-gray-300 rounded-lg mb-4 cursor-pointer"
+          className="w-full py-3 px-4 border border-gray-300 rounded-lg mb-4 cursor-pointer text-black font-medium"
           type="file"
           onChange={handleFileChange}
         />
