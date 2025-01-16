@@ -14,6 +14,7 @@ const InputImage: React.FC<InputImageProps> = ({ encodedString }) => {
         alt="Base64 Decoded Image"
         width={200}
         height={200}
+        layout="fixed"
       />
     </div>
   );

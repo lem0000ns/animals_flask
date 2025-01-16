@@ -82,7 +82,7 @@ const Predict = () => {
           </div>
         )}
       </div>
-      <Link className="mt-4 text-2xl border-2 p-2 rounded-2xl" href="/">
+      <Link className="mt-4 text-2xl border-2 p-2 rounded-2xl mb-8" href="/">
         Home
       </Link>
     </div>
