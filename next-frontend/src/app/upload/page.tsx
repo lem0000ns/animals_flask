@@ -47,7 +47,7 @@ const Predict = () => {
 
   return (
     <div className="uploadPage flex flex-col items-center justify-center mx-auto">
-      <div className="w-3/4 md:w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+      <div className="mt-16 w-3/4 md:w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
         <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-700 mb-6">
           Upload Your Image Below
         </h1>
