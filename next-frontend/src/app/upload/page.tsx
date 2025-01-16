@@ -20,10 +20,10 @@ const Predict = () => {
   // Handle the prediction logic
   const handlePredict = async (e: React.FormEvent<HTMLDivElement>) => {
     e.preventDefault();
+    setImageENC(null);
     if (!file) {
       setResult("No file selected");
     } else {
-      console.log(file);
       const formData = new FormData();
       formData.append("file", file);
       try {
@@ -32,7 +32,7 @@ const Predict = () => {
           body: formData,
         });
         if (!res.ok) {
-          setResult("error1");
+          setResult("Problem predicting image");
           throw new Error("problem predicting image");
         }
         const data = await res.json();
@@ -40,15 +40,15 @@ const Predict = () => {
         setImageENC(data.image_data); // Assuming image_data is a string
       } catch (e) {
         console.error(e);
-        setResult("error2");
+        setResult("Problem predicting image");
       }
     }
   };
 
   return (
     <div className="uploadPage flex flex-col items-center justify-center mx-auto">
-      <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
-        <h1 className="text-3xl font-bold text-center text-gray-700 mb-6">
+      <div className="w-3/4 md:w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
+        <h1 className="text-2xl md:text-3xl font-bold text-center text-gray-700 mb-6">
           Upload Your Image Below
         </h1>
         <input

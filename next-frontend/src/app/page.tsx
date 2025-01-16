@@ -5,16 +5,18 @@ import { CSSProperties } from "react";
 const Home: React.FC = () => {
   return (
     <main>
-      <div style={styles.container}>
-        <header style={styles.header}>
-          <h1 style={styles.title}>Welcome to the Animal Identifier</h1>
-          <p style={styles.paragraph}>
-            Upload an image of an animal and our app will identify it for you!
-          </p>
-          <Link href="/upload">
-            <button style={styles.button}>Upload Image</button>
-          </Link>
-        </header>
+      <div className="md:w-full w-3/4 text-center mx-auto mt-48">
+        <div style={styles.container}>
+          <header style={styles.header}>
+            <h1 style={styles.title}>Welcome to the Animal Identifier</h1>
+            <p style={styles.paragraph}>
+              Upload an image of an animal and our app will identify it for you!
+            </p>
+            <Link href="/upload">
+              <button style={styles.button}>Upload Image</button>
+            </Link>
+          </header>
+        </div>
       </div>
     </main>
   );
